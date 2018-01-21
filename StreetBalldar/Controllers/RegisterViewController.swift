@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class RegisterViewController: UIViewController {
 
@@ -15,6 +16,12 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordCheckTestField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+    
+    private let ref = Database.database().reference()
+    
+    enum dbReferences: String {
+        case users = "users"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,20 +36,22 @@ class RegisterViewController: UIViewController {
     }
     
     func createUser(email: String, password: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] (user, error) in
+            guard let selfNotNil = self else { return }
             if error != nil {
                 print(error?.localizedDescription)
             }
             else {
-                Auth.auth().
-                debugPrint(user?.email)
-                debugPrint(user?.displayName)
-                debugPrint(user?.phoneNumber)
-                debugPrint(user?.photoURL)
-                debugPrint(user?.providerID)
-                debugPrint(user?.refreshToken)
-                debugPrint(user?.uid)
+                guard let createdUser = user else { return }
+                let user = User(uid: createdUser.uid, email: createdUser.email, providerID: createdUser.providerID, refreshToken: createdUser.refreshToken)
+                
+                let usersRef = selfNotNil.ref.child(dbReferences.users.rawValue)
+                usersRef.setValue(user.toJSON())
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 }

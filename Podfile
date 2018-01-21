@@ -12,6 +12,7 @@ target 'StreetBalldar' do
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
     pod 'SDWebImage', '~> 3.7'
+    pod 'SwiftyJSON'
 #    pod 'ImageSlideshow', '~> 1.4'
 #    pod 'ImageSlideshow/SDWebImage'
 #    pod 'IQKeyboardManager'
