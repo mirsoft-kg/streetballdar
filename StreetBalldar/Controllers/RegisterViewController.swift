@@ -30,7 +30,19 @@ class RegisterViewController: UIViewController {
     
     func createUser(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-            debugPrint(user)
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+            else {
+                Auth.auth().
+                debugPrint(user?.email)
+                debugPrint(user?.displayName)
+                debugPrint(user?.phoneNumber)
+                debugPrint(user?.photoURL)
+                debugPrint(user?.providerID)
+                debugPrint(user?.refreshToken)
+                debugPrint(user?.uid)
+            }
         }
     }
 }
