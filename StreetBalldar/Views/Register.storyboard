@@ -18,46 +18,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bx8-h5-G7j">
-                                <rect key="frame" x="40" y="268.5" width="295" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bx8-h5-G7j" customClass="ErrorTextField" customModule="Material">
+                                <rect key="frame" x="40" y="278" width="295" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="email"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderVerticalOffset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                        <color key="value" red="0.10302091389894485" green="0.6876789927482605" blue="0.36409074068069458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-71-xFV">
-                                <rect key="frame" x="40" y="318.5" width="295" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-71-xFV" customClass="TextField" customModule="Material">
+                                <rect key="frame" x="40" y="325" width="295" height="17"/>
+                                <color key="tintColor" red="0.10302091389894485" green="0.6876789927482605" blue="0.36409074068069458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="password"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderVerticalOffset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                        <color key="value" red="0.10302091389894485" green="0.6876789927482605" blue="0.36409074068069458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isVisibilityIconButtonEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH9-rH-F6I">
-                                <rect key="frame" x="40" y="227.5" width="102.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="40" y="127.5" width="185.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.10302091389894485" green="0.6876789927482605" blue="0.36409074068069458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anz-x9-xiY">
-                                <rect key="frame" x="40" y="368.5" width="295" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anz-x9-xiY" customClass="TextField" customModule="Material">
+                                <rect key="frame" x="40" y="372" width="295" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="check password"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderVerticalOffset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                        <color key="value" red="0.10302091389894485" green="0.6876789927482605" blue="0.36409074068069458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isVisibilityIconButtonEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnu-WE-0rA">
                                 <rect key="frame" x="40" y="567" width="295" height="40"/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.59607843140000005" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.1030209139" green="0.68767899269999999" blue="0.36409074070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="z8x-of-TAW"/>
                                 </constraints>
-                                <state key="normal" title="Регистрация">
+                                <state key="normal" title="Начать">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="registerButtonTapped:" destination="F5X-9z-uMg" eventType="touchUpInside" id="Krm-vP-HuP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите свой логин и пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-zN-eU9">
+                                <rect key="frame" x="40" y="196" width="186" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Bx8-h5-G7j" firstAttribute="top" secondItem="2wa-zN-eU9" secondAttribute="bottom" constant="66" id="8Np-ig-hCb"/>
                             <constraint firstItem="WH9-rH-F6I" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="8j4-UV-TqA"/>
                             <constraint firstItem="anz-x9-xiY" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="Dim-wJ-OS9"/>
                             <constraint firstItem="MSp-71-xFV" firstAttribute="centerX" secondItem="b2l-IV-H0u" secondAttribute="centerX" id="JDC-bn-WTG"/>
@@ -66,18 +104,19 @@
                             <constraint firstItem="Bx8-h5-G7j" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="Pag-Xj-73K"/>
                             <constraint firstItem="5ee-Y7-ZAo" firstAttribute="trailing" secondItem="MSp-71-xFV" secondAttribute="trailing" constant="40" id="Pdw-hE-pZZ"/>
                             <constraint firstItem="5ee-Y7-ZAo" firstAttribute="trailing" secondItem="Bx8-h5-G7j" secondAttribute="trailing" constant="40" id="RG9-cJ-sAK"/>
-                            <constraint firstItem="anz-x9-xiY" firstAttribute="top" secondItem="MSp-71-xFV" secondAttribute="bottom" constant="20" id="YvI-5F-kz9"/>
-                            <constraint firstItem="Bx8-h5-G7j" firstAttribute="top" secondItem="WH9-rH-F6I" secondAttribute="bottom" constant="20" id="k1N-Fk-M7E"/>
+                            <constraint firstItem="anz-x9-xiY" firstAttribute="top" secondItem="MSp-71-xFV" secondAttribute="bottom" constant="30" id="YvI-5F-kz9"/>
+                            <constraint firstItem="2wa-zN-eU9" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="b0f-ee-Bg6"/>
+                            <constraint firstItem="2wa-zN-eU9" firstAttribute="top" secondItem="WH9-rH-F6I" secondAttribute="bottom" constant="30" id="fDk-O8-6O1"/>
                             <constraint firstItem="MSp-71-xFV" firstAttribute="centerY" secondItem="b2l-IV-H0u" secondAttribute="centerY" id="mWc-iY-2I8"/>
                             <constraint firstItem="MSp-71-xFV" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="q8g-zV-8Mh"/>
                             <constraint firstItem="5ee-Y7-ZAo" firstAttribute="trailing" secondItem="qnu-WE-0rA" secondAttribute="trailing" constant="40" id="rPI-mp-S7f"/>
                             <constraint firstItem="qnu-WE-0rA" firstAttribute="leading" secondItem="5ee-Y7-ZAo" secondAttribute="leading" constant="40" id="ueJ-ih-rOA"/>
-                            <constraint firstItem="MSp-71-xFV" firstAttribute="top" secondItem="Bx8-h5-G7j" secondAttribute="bottom" constant="20" id="x8U-QG-VhJ"/>
+                            <constraint firstItem="MSp-71-xFV" firstAttribute="top" secondItem="Bx8-h5-G7j" secondAttribute="bottom" constant="30" id="x8U-QG-VhJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5ee-Y7-ZAo"/>
                     </view>
                     <connections>
-                        <outlet property="loginTextField" destination="Bx8-h5-G7j" id="4a4-0D-BEk"/>
+                        <outlet property="emailField" destination="Bx8-h5-G7j" id="hH3-xS-LOa"/>
                         <outlet property="passwordCheckTestField" destination="anz-x9-xiY" id="e84-TY-9bl"/>
                         <outlet property="passwordTextField" destination="MSp-71-xFV" id="nWL-au-Zxu"/>
                         <outlet property="registerButton" destination="qnu-WE-0rA" id="TSE-7z-bPT"/>

@@ -12,6 +12,8 @@ target 'StreetBalldar' do
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
     pod 'SDWebImage', '~> 3.7'
+    pod 'Material', '~> 2.0'
+    pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 #    pod 'ImageSlideshow', '~> 1.4'
 #    pod 'ImageSlideshow/SDWebImage'
 #    pod 'IQKeyboardManager'
