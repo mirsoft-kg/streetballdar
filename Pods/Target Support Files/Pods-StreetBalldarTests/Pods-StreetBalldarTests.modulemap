@@ -1,6 +1,0 @@
-framework module Pods_StreetBalldarTests {
-  umbrella header "Pods-StreetBalldarTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
